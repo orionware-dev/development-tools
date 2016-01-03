@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import developmenttools.cloningscript.AddProjectToCloningScript;
+import developmenttools.cloningscript.addproject.AddProjectToCloningScript;
 
 public class FileUtilities
 {

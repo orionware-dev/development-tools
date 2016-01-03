@@ -1,4 +1,4 @@
-package developmenttools.cloningscript;
+package developmenttools.cloningscript.addproject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,7 +19,7 @@ public class AddProjectToCloningScript
         
         try
         {
-            InputStream input = fileUtilities.loadFileStream(AddProjectToCloningScript.class, "developmenttools/cloningscript/AddProjectToCloningScript.prop");
+            InputStream input = fileUtilities.loadFileStream(AddProjectToCloningScript.class, "developmenttools/cloningscript/addproject/EditProjectToCloningScript.prop");
             props.load(input);
             String cloningScriptLocation = props.getProperty("cloning.script.location");
             Properties repositoriesToCloneProps = new Properties();
