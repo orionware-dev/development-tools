@@ -30,13 +30,8 @@ public class EditProjectInCloningScript
             
             if("library".equals(typeOfProjectToEdit))
             {
-                int numberOfExistingLibraries = Integer.parseInt(repositoriesToCloneProps.getProperty("number_of_orion_libraries_repositories"));
-                String repoKey = "orion_libraries_repository_" + numberOfExistingLibraries;
                 String projectNameToEdit = props.getProperty("project.name.to.edit");
                 String newProjectName = props.getProperty("new.project.name");
-                String repo = "https://github.com/orionware-libraries/" + projectNameToEdit + ".git";
-                String repoDirKey = "orion_libraries_repository_dir_" + numberOfExistingLibraries;
-                String repoDir = "/c/workspaces/orion/libraries/projects/" + projectNameToEdit;
                 BufferedReader inputFile = null;
                 
                 try
@@ -60,10 +55,6 @@ public class EditProjectInCloningScript
                         fileStringBuilder.append(System.lineSeparator());
                     }
                     
-                    fileStringBuilder.append(repoKey + "=" + repo);
-                    fileStringBuilder.append(System.lineSeparator());
-                    fileStringBuilder.append(repoDirKey + "=" + repoDir);
-                    fileStringBuilder.append(System.lineSeparator());
                     inputFile.close();
                     new FileUtilities().saveStringToFile(cloningScriptLocation, fileStringBuilder.toString());
                 }
