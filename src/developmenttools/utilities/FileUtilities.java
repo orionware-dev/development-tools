@@ -2,11 +2,15 @@ package developmenttools.utilities;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import org.apache.commons.io.FileUtils;
 
 public class FileUtilities
 {
@@ -112,6 +116,20 @@ public class FileUtilities
                     
                 }
             }
+        }
+    }
+    
+    
+    public void emptyDirectory(String directory)
+    {
+        try
+        {
+            System.out.println(directory);
+            FileUtils.cleanDirectory(new File(directory)); 
+        }
+        catch(Exception e)
+        {
+            
         }
     }
 }
