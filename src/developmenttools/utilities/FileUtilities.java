@@ -86,11 +86,19 @@ public class FileUtilities
         {
             output = new BufferedWriter(new FileWriter(filePath));
             String[] lines = fileString.split(lineSeparator);
+            long lineCounter = 1;
+            int numberOfLines = lines.length;
             
             for(String line : lines)
             {
                 output.write(line);
-                output.write(lineSeparator);
+                
+                if(lineCounter != numberOfLines)
+                {
+                    output.write(lineSeparator);
+                }
+                
+                ++lineCounter;
             }
         }
         catch(FileNotFoundException e)

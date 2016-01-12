@@ -1,0 +1,15 @@
+orion.libraries.repo.dir=C:/workspaces/orion/platform/orionware-libraries
+old.class.path=datastructuresintegrationtests.dependencyinjection.TestClass2
+new.class.path=data-structures-integration-tests.dependencyinjector.TesterClass653
+source.dir.to.scan.1=/datastructures/src
+source.dir.to.scan.2=/datastructures/integrationtests
+source.dir.to.scan.3=/datastructuresfacades/src
+source.dir.to.scan.4=/datastructuresfacades/integrationtests
+source.dir.to.scan.5=/datastructuresservices/src
+source.dir.to.scan.6=/datastructuresservices/integrationtests
+source.dir.to.scan.7=/designpatterns/src
+source.dir.to.scan.8=/designpatterns/integrationtests
+source.dir.to.scan.9=/designpatternsfacades/src
+source.dir.to.scan.10=/designpatternsfacades/integrationtests
+source.dir.to.scan.11=/designpatternsservices/src
+source.dir.to.scan.12=/designpatternsservices/integrationtests

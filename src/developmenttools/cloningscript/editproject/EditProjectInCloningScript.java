@@ -56,7 +56,7 @@ public class EditProjectInCloningScript
                     }
                     
                     inputFile.close();
-                    new FileUtilities().saveStringToFile(cloningScriptLocation, fileStringBuilder.toString());
+                    fileUtilities.saveStringToFile(cloningScriptLocation, fileStringBuilder.toString());
                 }
                 catch(FileNotFoundException e)
                 {
